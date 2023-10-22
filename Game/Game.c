@@ -33,7 +33,4 @@ int main() {
 	scanf("\n%d", &asdf);
 
 	printf("%d", asdf);
-
-	printf("안녕하세요");
-	//안녕하세요 출력
 }
