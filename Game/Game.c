@@ -33,4 +33,6 @@ int main() {
 	scanf("\n%d", &asdf);
 
 	printf("%d", asdf);
+
+	//안녕하세요
 }

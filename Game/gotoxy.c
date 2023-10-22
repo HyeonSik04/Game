@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <Windows.h>
 
-//커서를 (x, y)로 이동
+//커서를 x, y로 이동
 
 void gotoxy(int x, int y) {
 	COORD pos = { x,y };
