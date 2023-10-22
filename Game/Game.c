@@ -34,5 +34,6 @@ int main() {
 
 	printf("%d", asdf);
 
-	//안녕하세요
+	printf("안녕하세요");
+	//안녕하세요 출력
 }
