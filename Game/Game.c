@@ -34,4 +34,5 @@ int main() {
 
 	printf("%d", asdf);
 
+	printf("안녕하시오리까");
 }
