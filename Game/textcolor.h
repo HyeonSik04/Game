@@ -1,0 +1,1 @@
+void textcolor(int colorNum);
