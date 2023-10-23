@@ -1,4 +1,4 @@
-#include <stdio.h>
+Ôªø#include <stdio.h>
 #include "gotoxy.h"
 #include "textcolor.h"
 #include "key_control.h"
@@ -14,107 +14,123 @@ int map_select() {
 	int y = 10;
 	gotoxy(x, y);
 	textcolor(2);
-	printf("°‹");
+	printf("‚óè");
 	while (1) {
 		int key = key_control();
-		//Ω£
+		//Ïà≤
 		if (x == 26 && y == 10) {
-			//Ω£ -> πŸ¥Ÿ
+			//Ïà≤ -> Î∞îÎã§
 			if (key == UP || key == RIGHT) {
 				gotoxy(x, y);
 				textcolor(7);
-				printf("°€");
+				printf("‚óã");
 				x = 45;
 				y = 7;
 				gotoxy(x, y);
 				textcolor(2);
-				printf("°‹");
+				printf("‚óè");
 			}
-			//Ω£ -> ªÁ∏∑
+			//Ïà≤ -> ÏÇ¨Îßâ
 			else if (key == DOWN) {
 				textcolor(7);
 				gotoxy(x, y);
-				printf("°€");
+				printf("‚óã");
 				x = 28;
 				y = 18;
 				gotoxy(x, y);
 				textcolor(2);
-				printf("°‹");
+				printf("‚óè");
+			}
+			//Ïà≤ ÏÑ†ÌÉù
+			else if (key == SUBMIT) {
+				return 1;
 			}
 		}
-		//ªÁ∏∑
+		//ÏÇ¨Îßâ
 		else if (x == 28 && y == 18) {
-			//ªÁ∏∑ -> µø±º
+			//ÏÇ¨Îßâ -> ÎèôÍµ¥
 			if (key == RIGHT) {
 				gotoxy(x, y);
 				textcolor(7);
-				printf("°€");
+				printf("‚óã");
 				x = 41;
 				y = 14;
 				gotoxy(x, y);
 				textcolor(2);
-				printf("°‹");
+				printf("‚óè");
 			}
-			//ªÁ∏∑ -> Ω£
+			//ÏÇ¨Îßâ -> Ïà≤
 			else if (key == UP) {
 				textcolor(7);
 				gotoxy(x, y);
-				printf("°€");
+				printf("‚óã");
 				x = 26;
 				y = 10;
 				gotoxy(x, y);
 				textcolor(2);
-				printf("°‹");
+				printf("‚óè");
+			}
+			//ÏÇ¨Îßâ ÏÑ†ÌÉù
+			else if (key == SUBMIT) {
+				return 2;
 			}
 		}
-		//µø±º
+		//ÎèôÍµ¥
 		else if (x == 41 && y == 14) {
-			//µø±º -> πŸ¥Ÿ
+			//ÎèôÍµ¥ -> Î∞îÎã§
 			if (key == UP) {
 				gotoxy(x, y);
 				textcolor(7);
-				printf("°€");
+				printf("‚óã");
 				x = 45;
 				y = 7;
 				gotoxy(x, y);
 				textcolor(2);
-				printf("°‹");
+				printf("‚óè");
 			}
-			//µø±º -> ªÁ∏∑
+			//ÎèôÍµ¥ -> ÏÇ¨Îßâ
 			else if (key == LEFT) {
 				textcolor(7);
 				gotoxy(x, y);
-				printf("°€");
+				printf("‚óã");
 				x = 28;
 				y = 18;
 				gotoxy(x, y);
 				textcolor(2);
-				printf("°‹");
+				printf("‚óè");
+			}
+			//ÎèôÍµ¥ ÏÑ†ÌÉù
+			else if (key == SUBMIT) {
+				return 3;
 			}
 		}
-		//πŸ¥Ÿ
+		//Î∞îÎã§
 		else if (x == 45 && y == 7) {
-			//πŸ¥Ÿ -> µø±º
+			//Î∞îÎã§ -> ÎèôÍµ¥
 			if (key == DOWN) {
 				gotoxy(x, y);
 				textcolor(7);
-				printf("°€");
+				printf("‚óã");
 				x = 41;
 				y = 14;
 				gotoxy(x, y);
 				textcolor(2);
-				printf("°‹");
+				printf("‚óè");
 			}
-			//πŸ¥Ÿ -> Ω£
+			//Î∞îÎã§ -> Ïà≤
 			else if (key == LEFT) {
 				textcolor(7);
 				gotoxy(x, y);
-				printf("°€");
+				printf("‚óã");
 				x = 26;
 				y = 10;
 				gotoxy(x, y);
 				textcolor(2);
-				printf("°‹");
+				printf("‚óè");
+			}
+			//Î∞îÎã§ ÏÑ†ÌÉù
+			else if (key == SUBMIT) {
+				return 4;
 			}
 		}
 	}

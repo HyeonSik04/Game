@@ -1,1 +1,1 @@
-void setting();
+﻿void setting();

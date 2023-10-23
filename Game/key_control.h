@@ -1,1 +1,1 @@
-int key_control();
+﻿int key_control();

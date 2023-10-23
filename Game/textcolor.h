@@ -1,1 +1,1 @@
-void textcolor(int colorNum);
+﻿void textcolor(int colorNum);

@@ -1,4 +1,4 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 #include "key_control.h"
 #include "gotoxy.h"
 #include "textcolor.h"
@@ -13,9 +13,9 @@ int start_menu() {
 	int x = 42;
 	int y = 19;
 	gotoxy(x - 2, y);
-	printf("> °ÔÀÓ½ÃÀÛ");
+	printf("> ê²Œìž„ì‹œìž‘");
 	gotoxy(x, y + 2);
-	printf("°ÔÀÓÁ¾·á");
+	printf("ê²Œìž„ì¢…ë£Œ");
 	while (1) {
 		int key = key_control();
 		if (y == 19) {

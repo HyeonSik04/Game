@@ -1,7 +1,7 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 #include <Windows.h>
 
-//Ãâ·Â ÅØ½ºÆ® »ö±ò ¹Ù²Ù±â
+//ì¶œë ¥ í…ìŠ¤íŠ¸ ìƒ‰ê¹” ë°”ê¾¸ê¸°
 void textcolor(int colorNum) {
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), colorNum);
 }

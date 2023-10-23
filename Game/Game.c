@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+ï»¿#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 #include <Windows.h> 
@@ -29,10 +29,5 @@ int main() {
 	print_map();
 	map_select();
 
-	int asdf;
-	scanf("\n%d", &asdf);
-
-	printf("%d", asdf);
-
-	printf("¾È³çÇÏ½Ã¿À¸®±î");
+	//ì•ˆë…•í•˜ì„¸ìš”
 }

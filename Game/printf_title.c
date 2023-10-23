@@ -1,4 +1,4 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 #include "gotoxy.h"
 
 void print_title() {
@@ -21,8 +21,8 @@ void print_title() {
 }
 
 /*
-* 12Çà
-* 52¿­
+* 12í–‰
+* 52ì—´
 * 
  ,adPPYb,d8 ,adPPYYba, 88,dPYba,,adPYba,   ,adPPYba,
 a8"    `Y88 ""     `Y8 88P'   "88"    "8a a8P_____88
@@ -33,7 +33,7 @@ a8"    `Y88 ""     `Y8 88P'   "88"    "8a a8P_____88
   "Y8bbdP"
 
 
-						°ÔÀÓ½ÃÀÛ
+						ê²Œìž„ì‹œìž‘
 
-						°ÔÀÓÁ¾·á
+						ê²Œìž„ì¢…ë£Œ
 */

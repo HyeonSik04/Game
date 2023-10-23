@@ -1,20 +1,20 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 #include <stdlib.h>
 #include <Windows.h>
 
 void setting() {
-	//Ã¢ ÀÌ¸§
-	SetConsoleTitle(TEXT("°ÔÀÓ"));
-	//Ã¢ Å©±â
+	//ì°½ ì´ë¦„
+	SetConsoleTitle(TEXT("ê²Œì„"));
+	//ì°½ í¬ê¸°
 	system("mode con:cols=90 lines=30");
 
-	//±ôºıÀÌ´Â Ä¿¼­ ¾ø¾Ö±â
+	//ê¹œë¹¡ì´ëŠ” ì»¤ì„œ ì—†ì• ê¸°
 	CONSOLE_CURSOR_INFO cursorInfo = { 0, };
 	cursorInfo.bVisible = 0;
 	cursorInfo.dwSize = 1;
 	SetConsoleCursorInfo(GetStdHandle(STD_OUTPUT_HANDLE), &cursorInfo);
 
-	//µå·¡±× ¾ÈµÇ°Ô ÇÏ±â
+	//ë“œë˜ê·¸ ì•ˆë˜ê²Œ í•˜ê¸°
 	/*
 	DWORD prevMode;
 	GetConsoleMode(GetStdHandle(STD_INPUT_HANDLE), &prevMode);

@@ -1,7 +1,7 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 #include <Windows.h>
 
-//Ä¿¼­ x, y·Î ÀÌµ¿
+//ì»¤ì„œ x, yë¡œ ì´ë™
 
 void gotoxy(int x, int y) {
 	COORD pos = { x,y };

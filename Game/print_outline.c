@@ -1,8 +1,8 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 #include <Windows.h>
 #include "gotoxy.h"
 
-//È­¸éÀ» ÃÊ±âÈ­ ÈÄ Å×µÎ¸® Ãâ·Â
+//í™”ë©´ì„ ì´ˆê¸°í™” í›„ í…Œë‘ë¦¬ ì¶œë ¥
 void print_outline() {
 	system("cls");
 

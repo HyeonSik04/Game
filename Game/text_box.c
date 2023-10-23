@@ -1,4 +1,4 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 #include "gotoxy.h"
 
 void text_box() {
@@ -6,26 +6,26 @@ void text_box() {
 	int y = 19;
 	gotoxy(x, y);
 	for (int i = 1; i <= 44; i++) {
-		printf("¡á");
+		printf("â– ");
 	}
 	
 	printf("\n");
 
 	for (int i = 1; i <= 8; i++) {
 		gotoxy(x, ++y);
-		printf("¡á");
+		printf("â– ");
 		for (int j = 1; j <= 84; j++) {
 			printf(" ");
 		}
 
-		printf("¡á");
+		printf("â– ");
 		printf("\n");
 	}
 
 	gotoxy(x, ++y);
 
 	for (int i = 1; i <= 44; i++) {
-		printf("¡á");
+		printf("â– ");
 	}
 
 	printf("\n");

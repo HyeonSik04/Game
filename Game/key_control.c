@@ -1,4 +1,4 @@
-#include <stdio.h>
+ï»¿#include <stdio.h>
 #define UP 0 //72
 #define DOWN 1 //80
 #define LEFT 2 //75
@@ -12,20 +12,20 @@ int key_control() {
             input = _getch();
             if (input == -32) {
                 input = _getch();
-                 if (input == 72) {     //¡è Å° ´©¸£¸é 0 ¹İÈ¯
+                 if (input == 72) {     //â†‘ í‚¤ ëˆ„ë¥´ë©´ 0 ë°˜í™˜
                     return UP;
                 }
-                else if (input == 80) {     //¡é Å° ´©¸£¸é 1 ¹İÈ¯
+                else if (input == 80) {     //â†“ í‚¤ ëˆ„ë¥´ë©´ 1 ë°˜í™˜
                     return DOWN;
                 }
-                else if (input == 75) {     //¡ç ´©¸£¸é 2 ¹İÈ¯
+                else if (input == 75) {     //â† ëˆ„ë¥´ë©´ 2 ë°˜í™˜
                     return LEFT;
                 }
-                else if (input == 77) {     //¡æ Å° ´©¸£¸é 3 ¹İÈ¯
+                else if (input == 77) {     //â†’ í‚¤ ëˆ„ë¥´ë©´ 3 ë°˜í™˜
                     return RIGHT;
                 }
             }
-            else if (input == 'Z' || input == 'z') {    //z or Z Å° ´©¸£¸é 4 ¹İÈ¯
+            else if (input == 'Z' || input == 'z') {    //z or Z í‚¤ ëˆ„ë¥´ë©´ 4 ë°˜í™˜
                 return SUBMIT;
             }
         }
