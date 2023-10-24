@@ -4,6 +4,7 @@
 #define LEFT 2 //75
 #define RIGHT 3 //77
 #define SUBMIT 4
+#define CANCEL 5
 
 int key_control() {
     char input;
@@ -27,6 +28,9 @@ int key_control() {
             }
             else if (input == 'Z' || input == 'z') {    //z or Z 키 누르면 4 반환
                 return SUBMIT;
+            }
+            else if (input == 'X' || input == 'x') {    //x or X 키 누르면 5 반환
+                return CANCEL;
             }
         }
     }

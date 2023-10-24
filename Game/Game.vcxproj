@@ -140,6 +140,7 @@
     <ClCompile Include="start_menu.c" />
     <ClCompile Include="textcolor.c" />
     <ClCompile Include="text_box.c" />
+    <ClCompile Include="unclear_message.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="entity.h" />

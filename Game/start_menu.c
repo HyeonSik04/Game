@@ -8,6 +8,7 @@
 #define LEFT 2 //75
 #define RIGHT 3 //77
 #define SUBMIT 4
+#define CANCEL 5
 
 int start_menu() {
 	int x = 42;

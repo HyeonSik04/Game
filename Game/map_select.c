@@ -8,8 +8,9 @@
 #define LEFT 2 //75
 #define RIGHT 3 //77
 #define SUBMIT 4
+#define CANCEL 5
 
-int map_select() {
+int map_select(int level) {
 	int x = 26;
 	int y = 10;
 	gotoxy(x, y);
@@ -43,6 +44,7 @@ int map_select() {
 			}
 			//숲 선택
 			else if (key == SUBMIT) {
+				printf("숲 스테이지 시작");
 				return 1;
 			}
 		}
@@ -72,7 +74,13 @@ int map_select() {
 			}
 			//사막 선택
 			else if (key == SUBMIT) {
-				return 2;
+				if (level == 2) {
+					printf("사막 스테이지 시작");
+					return 2;
+				}
+				else {
+					return 0;
+				}
 			}
 		}
 		//동굴
@@ -101,7 +109,13 @@ int map_select() {
 			}
 			//동굴 선택
 			else if (key == SUBMIT) {
-				return 3;
+				if (level == 3) {
+					printf("동굴 스테이지 시작");
+					return 3;
+				}
+				else {
+					return 0;
+				}
 			}
 		}
 		//바다
@@ -130,7 +144,13 @@ int map_select() {
 			}
 			//바다 선택
 			else if (key == SUBMIT) {
-				return 4;
+				if (level == 2) {
+					printf("바다 스테이지 시작");
+					return 2;
+				}
+				else {
+					return 0;
+				}
 			}
 		}
 	}

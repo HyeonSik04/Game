@@ -57,6 +57,9 @@
     <ClCompile Include="map_select.c">
       <Filter>소스 파일\screen</Filter>
     </ClCompile>
+    <ClCompile Include="unclear_message.c">
+      <Filter>소스 파일\screen</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="entity.h">
